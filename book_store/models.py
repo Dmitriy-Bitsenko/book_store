@@ -12,5 +12,15 @@ class book(models.Model):
     size = models.CharField(max_length=50, null=True, verbose_name='Размер книги')
     publication_date = models.DateField(auto_now_add=True, verbose_name='Дата публикации')
 
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Книга'
+        verbose_name_plural = 'Книги'
+        ordering = ['title', 'publication_date']
+
+
+
 
 
