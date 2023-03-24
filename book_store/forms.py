@@ -33,13 +33,13 @@ class BookForm(forms.ModelForm):
                     'placeholder': 'Цена',
                 }
             ),
-            'size': forms.NumberInput(
+            'size': forms.TextInput(
                 attrs={
                     'class': 'form-control',
                     'placeholder': 'Размер книги',
                 }
             ),
-            'cover_type': forms.NumberInput(
+            'cover_type': forms.TextInput(
                 attrs={
                     'class': 'form-control',
                     'placeholder': 'Тип обложки',

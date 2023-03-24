@@ -10,7 +10,7 @@
     <p>Количество страниц:{{ one_book.count_pages }}</p>
     <p>Цена:{{ one_book.price }}</p>
     <p>Тип обложки:{{ one_book.cover_type }}</p>
-    <p>Размеры:{{ one_book.cover_type }}</p>
+    <p>Размеры:{{ one_book.size }}</p>
     <p>Дата публикации:{{ one_book.publication_date|date:"Y-m-d" }}</p>
 
     <a class="btn btn-primary" href="{% url 'book_edit' one_book.pk%}">Изменить книгу</a>
