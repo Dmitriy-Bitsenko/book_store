@@ -13,6 +13,7 @@
     <p>Размеры:{{ one_book.cover_type }}</p>
     <p>Дата публикации:{{ one_book.publication_date|date:"Y-m-d" }}</p>
 
+    <a class="btn btn-primary" href="{% url 'book_edit' one_book.pk%}">Изменить книгу</a>
     <a class="btn btn-primary" href="{% url 'book_list' %}">Обратно к каталогу</a>
 
 {% endblock %}

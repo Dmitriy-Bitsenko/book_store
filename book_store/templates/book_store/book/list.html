@@ -17,6 +17,7 @@
                         <p class="card-text">{{ item.price }}</p>
                         <p class="card-text">{{ item.publication_date|date:"Y-m-d" }}</p>
                         <a class="btn btn-primary" href="{% url 'book_description' item.pk %}">Подробнее...</a>
+                        <a class="btn btn-primary" href="{% url 'book_add' item.pk %}">Добавить книгу</a>
                     </div>
                 </div>
             {% endfor %}
